@@ -1,0 +1,60 @@
+# TensorFlow is much easier to install using Anaconda, especially
+# on Windows or when using a GPU. Please see the installation
+# instructions in INSTALL.md
+
+##### Core scientific packages
+jupyter
+matplotlib
+numpy
+pandas
+scipy
+
+##### Machine Learning packages
+scikit-learn
+
+# Optional: the XGBoost library is only used in chapter 7
+xgboost
+
+##### TensorFlow-related packages
+
+# If you want to use a GPU, it must have CUDA Compute Capability 3.5 or
+# higher support, and you must install CUDA, cuDNN and more: see
+# tensorflow.org for the detailed installation instructions.
+
+tensorflow # or tensorflow-gpu for GPU support
+
+tensorboard
+
+##### Reinforcement Learning library (chapter 16)
+
+# There are a few dependencies you need to install first, check out:
+# https://github.com/openai/gym#installing-everything
+gym[atari,Box2D]
+# On Windows, install atari_py using:
+# pip install --no-index -f https://github.com/Kojoley/atari-py/releases atari_py
+
+##### Image manipulation
+Pillow
+graphviz
+scikit-image
+
+#pyvirtualdisplay # needed in chapter 16, if on a headless server
+                  # (i.e., without screen, e.g., Colab or VM)
+
+
+##### Additional utilities
+
+# Efficient jobs (caching, parallelism, persistence)
+joblib
+
+# Nice utility to diff Jupyter Notebooks.
+nbdime
+
+# May be useful with Pandas for complex "where" clauses (e.g., Pandas
+# tutorial).
+numexpr
+
+# Optional: these libraries can be useful in the classification chapter,
+# exercise 4.
+nltk
+urlextract
